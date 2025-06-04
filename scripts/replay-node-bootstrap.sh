@@ -59,7 +59,7 @@ sudo -i -u "${USER}" pip install bs4
 
 ## add private ip ##
 # MACRO_P echo $ORCH_IP > /home/"${USER}"/orchestration-ip.txt
-# MACRO_P echo TOKEN=${github_read_token} > /home/"${USER}"/token.env
+# MACRO_P echo $github_read_token > /home/"${USER}"/token.env
 
 ## create cron tab ##
 echo "* * * * * /home/${USER}/replay-test/replay-client/replay_wrapper_script.sh" | crontab -u ${USER} - && echo "Cron job added successfully"
