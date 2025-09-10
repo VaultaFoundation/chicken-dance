@@ -383,7 +383,7 @@ if __name__ == '__main__':
     if args.source_eosnation:
         search_title = f"{args.source_net} - {args.snapshot_version}"
         if args.source_net.lower() == "mainnet":
-            search_title = f"EOS Mainnet - {args.snapshot_version}"
+            search_title = f"Vaulta Mainnet - {args.snapshot_version}"
         if "jungle" in args.source_net.lower():
             search_title = f"Jungle 4 Testnet - {args.snapshot_version}"
         if "kylin" in args.source_net.lower():
