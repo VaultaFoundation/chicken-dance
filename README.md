@@ -2,7 +2,7 @@
 Distributed replay of transactions. Distributed to run entire history in a short period of time.
 
 ## Description
-Spins up many hosts that work together to process the entire history of EOS. Each instance is designated to test a unique range of blocks. At the end of the range the integrity hash is checked against a previous run to ensure validity of the replay.
+Spins up many hosts that work together to process the entire history of Vaulta. Each instance is designated to test a unique range of blocks. At the end of the range the integrity hash is checked against a previous run to ensure validity of the replay.
 
 See [High Level Design](docs/high-level-design.md). The service has two components an orchestrator node, and many replay nodes. The replay nodes connect to the orchestrator via HTTP to fetch job configuration and update status.
 
